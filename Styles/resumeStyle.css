@@ -1,0 +1,176 @@
+    /* Background colour */ 
+  
+    body {
+        margin: 0;
+        background: #ffffff;
+        text-align: center;
+      
+    }
+    @font-face {
+        font-family: "Eagle Lake";
+        src: url(Fonts/EagleLake-Regular.ttf);
+    }
+
+    /* Styles for header 1 */
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 85px;
+        font-family: fantasy, 'Times New Roman';
+    }
+     /* Styles for header 2 */
+    h2 {
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 75px;
+        font-family: fantasy, 'Times New Roman';
+    }
+/* Main Nav */
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  rgb(255, 255, 255);
+    padding: 0px;
+    margin: 10px;
+}
+
+header .logo_header {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+header .logo {
+    height: 80px; /* image fits the nav */
+    width: auto;
+}
+
+header nav.horizontalNav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+header ul {
+    display: flex;
+    flex-grow: 1; /*takes up the remaining space of the nav evenly*/
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+header li {
+    flex: 1;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.3em;
+    color: white;
+   
+}
+
+/* Color scene for hovering over a button in the nav bar */
+
+header li:hover {
+    background: blue;
+    color: white;
+    
+}
+
+header a {
+    display: block; /*clicking the li instead of the text will take you to the page*/
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.pdf-icon {
+    width: 120px;
+    transition: transform 0.2s;
+    }
+
+.pdf-icon:hover {
+ transform: scale(1.1);
+}
+.buttons {
+    margin-top: 20px
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+.buttons a:hover{
+    background-color: #0056b3;
+}
+
+.contact a{
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+
+
+
+
+
+ /* Container for the form-This is an idea*/
+
+ .respawn-container {
+
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+ }
+
+ .resume-container{
+    margin-top: 50px;
+ }
+
+
+
+/* Nitpicking */
+
+
+/* Background image for the navbar! */
+.bg-image {
+
+    background-image: url("images/tavern.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* Revised Footer code! Thanks fellahs!. */
+.footer {
+
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    color: #f8fafc;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+
+
+
