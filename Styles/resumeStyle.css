@@ -1,35 +1,23 @@
-    /* Background colour */ 
-  
-    body {
-        margin: 0;
-        background: #ffffff;
-        text-align: center;
-      
-    }
-    @font-face {
-        font-family: "Eagle Lake";
-        src: url(Fonts/EagleLake-Regular.ttf);
-    }
+/* General Styles */
+@font-face {
+    font-family: "Eagle Lake";
+    src: url(Fonts/EagleLake-Regular.ttf);
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #ffffff;
+}
+h4 {
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: solid;
+}
 
-    /* Styles for header 1 */
-    h1 {
-        text-align: center;
-        padding-top: 20px;
-        text-decoration: underline;
-        font-size: 85px;
-        font-family: fantasy, 'Times New Roman';
-    }
-     /* Styles for header 2 */
-    h2 {
-        text-align: center;
-        padding-top: 20px;
-        text-decoration: underline;
-        font-size: 75px;
-        font-family: fantasy, 'Times New Roman';
-    }
 /* Main Nav */
 header {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,18 +25,15 @@ header {
     padding: 0px;
     margin: 10px;
 }
-
 header .logo_header {
     display: flex;
     width: auto;
     height: auto;
 }
-
 header .logo {
     height: 80px; /* image fits the nav */
     width: auto;
 }
-
 header nav.horizontalNav {
     flex-grow: 1;
     display: flex;
@@ -56,7 +41,6 @@ header nav.horizontalNav {
     align-items: center;
     background-color: black;
 }
-
 header ul {
     display: flex;
     flex-grow: 1; /*takes up the remaining space of the nav evenly*/
@@ -64,105 +48,121 @@ header ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    
 }
-
 header li {
     flex: 1;
     text-align: center;
     padding: 1em 0;
     font-size: 1.3em;
     color: white;
-   
 }
-
-/* Color scene for hovering over a button in the nav bar */
-
 header li:hover {
     background: blue;
     color: white;
-    
 }
-
 header a {
     display: block; /*clicking the li instead of the text will take you to the page*/
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px black;
+    font-family:'Times New Roman', Times, serif
 }
-.pdf-icon {
-    width: 120px;
-    transition: transform 0.2s;
-    }
-
-.pdf-icon:hover {
- transform: scale(1.1);
-}
-.buttons {
-    margin-top: 20px
-}
-
-.buttons a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    margin: 10px;
-    display: inline-block;
-}
-
-
-.buttons a:hover{
-    background-color: #0056b3;
-}
-
-.contact a{
-    color: #007BFF;
-    font-weight: bold;
-}
-
-.contact a:hover{
-    text-decoration:underline;
-}
-
-
-
-
-
-
- /* Container for the form-This is an idea*/
-
- .respawn-container {
-
-    max-width: 600px;
+/* stylings for the portfolio container */
+.portfolio{
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba (0,0,0,0.1);
     margin: auto;
-    padding: 20px;
- }
-
- .resume-container{
-    margin-top: 50px;
- }
-
-
-
-/* Nitpicking */
-
-
-/* Background image for the navbar! */
-.bg-image {
-
-    background-image: url("images/tavern.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    text-align: center;
+    background-color: #4e4d4c;/**/
+    border: 5px solid #1f3b1f;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;/*background colour of the div holding the h2*/
+    color: limegreen;/*h2 colour*/
+    padding: 5px;
+    font-family: cursive;
+    margin: 0 0 15px;
+    
+}
+/* extra style for transcript text box */
+.transcript-text{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 
-/* Revised Footer code! Thanks fellahs!. */
-.footer {
-
+/* To get a 3x3 grid going, this is the container */
+.courses {
+ display: flex;
+ gap: 10px;
+ width: 100%;
+ justify-content: space-around; /*spaces items out evenly*/
+ align-items: center;
+ padding: 40px;
+ background: #f4f4f4;
+ border-radius: 10px;
+ box-shadow: 0 4px 12px rgba (0,0,0,0.1);
+ flex-wrap: wrap;
+ margin: auto;
+ text-align: center;
+ background-color: #4e4d4c;/**/
+ border: 5px solid #1f3b1f;
+ color: rgb(216, 211, 211);
+}
+/* where the 3x3 is actually happening */
+.grid-item{
+    flex: 1 1 30%;
+    text-align: center;
+    padding: 20px;
+    min-width: 120px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: Grey;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);;
+}
+.grid-item:hover{
+    /* mouse over effect */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0,0,0, 0.15);
+}
+.grid-item p{
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* for the languages taught in class */
+.Languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    padding: 40px;
+    background: #4e4d4c;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba (0,0,0,0.1);
+    margin: auto;
+    text-align: center;
+    border: 5px;
+    color: rgb(216, 211, 211);
+   }
+   #section{
+    padding: 0 125px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana;
+}
+/*End of Menu Section*/
+footer{
+    width:100%;
     text-align: center;
     padding: 20px;
     background-color: #1e293b;
@@ -170,7 +170,3 @@ header a {
     margin-top: 50px;
     font-weight: bold;
 }
-
-
-
-

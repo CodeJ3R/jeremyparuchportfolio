@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* General Styles */
 @font-face {
-    font-family: "Eagle Lake";
+    font-family: 'Arial', sans-serif;
     src: url(Fonts/EagleLake-Regular.ttf);
 }
 body {
@@ -17,6 +17,8 @@ h4 {
     font-weight: lighter;
     text-decoration: solid;
 }
+
+
 
 /* Main Nav */
 header {
@@ -188,6 +190,7 @@ header a {
     flex-direction: column;
     align-items: center;
     color: rgb(216, 211, 211);
+    grid-template-columns: repeat(10,1fr);
 }
 .box:hover {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);/*a shadow appears when you hover over the box*/
