@@ -13,11 +13,18 @@ body {
 h4 {
     text-align: left;
     font-size: 12px;
-    font-style: italic;
+    font-style: bold;
     font-weight: lighter;
     text-decoration: solid;
 }
 
+p {
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: solid;
+}
 
 
 /* Main Nav */
@@ -309,3 +316,7 @@ footer{
     font-weight: bold;
 }
 
+ul{ width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
