@@ -6,6 +6,12 @@
     font-family: 'Arial', sans-serif;
     src: url(Fonts/EagleLake-Regular.ttf);
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -159,6 +165,36 @@ header a {
     margin: 0 0 15px;
 }
 
+#profile{
+    width: 900px;/*image is same size as the container it is in*/
+    height: 600px;
+    border-radius: 15%;/*rounded edges*/
+    padding: 5px 5px 5px;
+    border: 2px solid #6699cc;
+    margin: 0 auto;
+    box-sizing: border-box;/*when the page gets smaller, it keeps the 5px margin*/
+    box-shadow: 0px 12px 24px black; 
+    border-radius: 25%;
+    object-fit: cover;/*is spread out in the div*/
+
+    flex: 0 1 calc(20% - 15px); /*box width, minus gap*/
+    max-width: calc(40% - 60px);
+
+    margin: 10;
+    text-align: center;
+    padding: 10px;
+    background-color: #4e4d4c;/**/
+    border: 5px solid #1f3b1f;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(216, 211, 211);
+    grid-template-columns: repeat(10,1fr);
+    
+}
+
 /*Appetizer*/
 .box-container {/*container holding the container holding the content*/
     display: flex;/*can be flexed*/
@@ -175,7 +211,7 @@ header a {
     margin: 0 auto;
     box-sizing: border-box;/*when the page gets smaller, it keeps the 5px margin*/
     transform: translateY(-5px); 
-    box-shadow: 0px 12px 24px black; 
+    box-shadow: 0px 12px 12px black; 
 }
 #image img{
     width: 100%;
