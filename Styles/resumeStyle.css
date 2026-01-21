@@ -41,7 +41,7 @@ header nav.horizontalNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color:#6e00a1;
 }
 header ul {
     display: flex;
@@ -59,7 +59,7 @@ header li {
     color: white;
 }
 header li:hover {
-    background: blue;
+    background: rgb(119, 0, 255);
     color: white;
 }
 header a {
@@ -77,12 +77,12 @@ header a {
     margin: auto;
     text-align: center;
     background-color: #4e4d4c;/**/
-    border: 5px solid #1f3b1f;
+    border: 5px solid #ffffff;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
-    background-color: black;/*background colour of the div holding the h2*/
-    color: limegreen;/*h2 colour*/
+    background-color: rgb(255, 255, 255);/*background colour of the div holding the h2*/
+    color: rgb(7, 7, 7);/*h2 colour*/
     padding: 5px;
     font-family: cursive;
     margin: 0 0 15px;
@@ -96,7 +96,22 @@ header a {
     color: #333;
 }
 
+a:link {
+  color: rgb(245, 245, 245);
+}
+a:visited {
+  color: rgb(250, 250, 250);
+}
 
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(235, 235, 235);
+} 
 /* To get a 3x3 grid going, this is the container */
 .courses {
  display: flex;
@@ -111,20 +126,21 @@ header a {
  flex-wrap: wrap;
  margin: auto;
  text-align: center;
- background-color: #4e4d4c;/**/
- border: 5px solid #1f3b1f;
+ background-color: #ffffff;/**/
+ border: 5px solid #ffffff;
  color: rgb(216, 211, 211);
 }
 /* where the 3x3 is actually happening */
 .grid-item{
     flex: 1 1 30%;
     text-align: center;
+    align-items: center;
     padding: 20px;
     min-width: 120px;
-    border: 1px solid #ffffff;
+    border: 1px solid #0026ff;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: Grey;
+    background-color: rgb(129, 6, 211);
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);;
 }
@@ -148,7 +164,7 @@ header a {
     gap: 10px;
     width: 100%;
     padding: 40px;
-    background: #4e4d4c;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba (0,0,0,0.1);
     margin: auto;
@@ -163,11 +179,10 @@ header a {
     font-family: Verdana;
 }
 /*End of Menu Section*/
-footer{
-    width:100%;
+footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e293b;
+    background-color: #6e00a1;
     color: #f8fafc;
     margin-top: 50px;
     font-weight: bold;

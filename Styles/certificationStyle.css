@@ -21,7 +21,7 @@ h4 {
 h2{
     text-align: center;
     background-color: black;/*background colour of the div holding the h2*/
-    color: limegreen;/*h2 colour*/
+    color: rgb(255, 255, 255);/*h2 colour*/
     padding: 5px;
     font-family: cursive;
     margin: 0 0 15px;
@@ -50,7 +50,7 @@ header nav.horizontalNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color:#6e00a1;
 }
 header ul {
     display: flex;
@@ -68,7 +68,7 @@ header li {
     color: white;
 }
 header li:hover {
-    background: blue;
+    background: rgb(132, 40, 252);
     color: white;
 }
 header a {
@@ -85,8 +85,8 @@ header a {
     box-shadow: 0 4px 12px rgba (0,0,0,0.1);
     margin: auto;
     text-align: center;
-    background-color: #4e4d4c;/**/
-    border: 5px solid #1f3b1f;
+    background-color: #ffffff;/**/
+    border: 5px solid #ffffff;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
@@ -120,10 +120,27 @@ header a {
  flex-wrap: wrap;
  margin: auto;
  text-align: center;
- background-color: #4e4d4c;/**/
- border: 5px solid #1f3b1f;
- color: rgb(216, 211, 211);
+ background-color: #ffffff;/**/
+ border: 5px solid #ffffff;
+ color: rgb(135, 0, 245);
 }
+
+a:link {
+  color: rgb(245, 245, 245);
+}
+a:visited {
+  color: rgb(250, 250, 250);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(235, 235, 235);
+} 
 /* where the 3x3 is actually happening */
 .grid-item{
     flex: 1 1 30%;
@@ -133,7 +150,7 @@ header a {
     border: 1px solid #ffffff;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: Grey;
+    background-color: rgb(133, 0, 241);
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);;
 }

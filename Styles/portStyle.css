@@ -15,14 +15,30 @@ h4 {
     font-style: italic;
     font-weight: lighter;
     text-decoration: solid;
+    
+}
+a:link {
+  color: rgb(245, 245, 245);
+}
+a:visited {
+  color: rgb(250, 250, 250);
 }
 
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(235, 235, 235);
+} 
 /* Main Nav */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:  rgb(255, 255, 255);
+    background:  rgb(140, 16, 255);
     padding: 0px;
     margin: 10px;
 }
@@ -40,7 +56,7 @@ header nav.horizontalNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: rgb(140, 0, 255);
 }
 header ul {
     display: flex;
@@ -58,13 +74,14 @@ header li {
     color: white;
 }
 header li:hover {
-    background: blue;
+    background: rgb(132, 2, 255);
     color: white;
+    
 }
 header a {
     display: block; /*clicking the li instead of the text will take you to the page*/
     text-decoration: none;
-    color: white;
+    color: rgb(187, 187, 187);
     text-shadow: 1px 1px black;
     font-family:'Times New Roman', Times, serif
 }
@@ -76,15 +93,16 @@ header a {
     margin: auto;
     text-align: center;
     background-color: #4e4d4c;/**/
-    border: 5px solid #1f3b1f;
+    border: 5px solid #ffffff;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
-    background-color: black;/*background colour of the div holding the h2*/
-    color: limegreen;/*h2 colour*/
+    background-color: rgb(255, 255, 255);/*background colour of the div holding the h2*/
+    color: rgb(7, 7, 7);/*h2 colour*/
     padding: 5px;
     font-family: cursive;
     margin: 0 0 15px;
+    
     
 }
 /* extra style for transcript text box */
@@ -93,6 +111,7 @@ header a {
     font-size: 1.5em;
     margin-bottom: 30px;
     color: #333;
+    
 }
 
 
@@ -110,9 +129,10 @@ header a {
  flex-wrap: wrap;
  margin: auto;
  text-align: center;
- background-color: #4e4d4c;/**/
- border: 5px solid #1f3b1f;
- color: rgb(216, 211, 211);
+ background-color: #ffffff;/**/
+ border: 5px solid #ffffff;
+ color: rgb(255, 255, 255);
+ 
 }
 /* where the 3x3 is actually happening */
 .grid-item{
@@ -120,10 +140,10 @@ header a {
     text-align: center;
     padding: 20px;
     min-width: 120px;
-    border: 1px solid #ffffff;
+    border: 1px solid #0026ff;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: Grey;
+    background-color: rgb(129, 6, 211);
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);;
 }
@@ -154,19 +174,23 @@ header a {
     text-align: center;
     border: 5px;
     color: rgb(216, 211, 211);
+    background-color: #ffffff;/**/
+ border: 5px solid #ffffff;
+ color: rgb(255, 255, 255);
    }
    #section{
     padding: 0 125px;
     text-align: center;
     font-size: 2rem;
     font-family: Verdana;
+    
 }
 /*End of Menu Section*/
-footer{
-    width:100%;
+/*footer design*/
+footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e293b;
+    background-color: #6e00a1;
     color: #f8fafc;
     margin-top: 50px;
     font-weight: bold;

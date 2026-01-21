@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /*background color for whole page*/
+
 body {
     margin: 0;
     background: rgb(255, 255, 255);
@@ -32,7 +33,7 @@ header nav.horizontalNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: rgb(36, 147, 238);
 }
 
 header ul {
@@ -87,7 +88,7 @@ figure {
     margin-top: 10px;
     margin-left: 40px;
     border-radius: 10px; 
-    border: 5px solid black; 
+    border: 5px solid rgb(0, 0, 0); 
 }
 
 /*setting the grid items in the format they are, and colors, and font colors, etc.*/
@@ -103,18 +104,35 @@ figure {
 
 .column {
     width: 48%; 
-    background-color: #222222; 
+    background-color: #6e00a1; /* Portfilio and about me */
     padding: 20px;
     margin-right: 20px;
     margin-left: 10px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 6px 12px rgba(152, 2, 238, 0.2); 
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  
+
 }
 
+
+a:visited {
+  color: rgb(250, 250, 250);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(140, 0, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(235, 235, 235);
+} 
 .column:hover {
     transform: translateY(-5px); 
-    box-shadow: 0px 12px 24px black; 
+    box-shadow: 0px 12px 24px #6e00a1
+    
 }
 
 .column h2 {
@@ -131,7 +149,7 @@ figure {
 
 .full-width-row {
     width: 97%;
-    background-color: #222222; 
+    background-color: #6e00a1;  /* Resume button*/
     padding: 20px;
     text-align: center;
     box-shadow: 0px 6px 12px rgba(2, 2, 2, 0.2); 
@@ -142,7 +160,7 @@ figure {
 
 .full-width-row:hover {
     transform: translateY(-5px); 
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 12px 24px rgba(179, 2, 196, 0.3); 
 }
 
 .full-width-row h2 {
@@ -170,7 +188,7 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e293b;
+    background-color: #6e00a1;
     color: #f8fafc;
     margin-top: 50px;
     font-weight: bold;
