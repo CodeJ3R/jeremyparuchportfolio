@@ -8,9 +8,12 @@
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: left;
 }
 body {
     margin: 0;
@@ -381,8 +384,3 @@ footer {
     font-weight: bold;
 }
 
-ul{ width: fit-content;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: left;
-}
